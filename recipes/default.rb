@@ -3,11 +3,5 @@
 # Recipe:: default
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
+Chef::Log.info("********** Hello, World! **********")
 
-package 'httpd' do
-	action :install
-end
-
-service 'httpd' do 
-	action :enable, :start
-end
